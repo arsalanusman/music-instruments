@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 980px;
+	}
+}
+
+hr {
+    margin: 50px 0 !important;
+}
+body {
+	font-family: 'Montserrat', sans-serif !important;
+
+}
+body p {
+    color: #4e4e4e;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#header_half {
+    position: relative;
+    padding: 30px 50px;
+    box-shadow: 0px 30px 89px -100px #000;
+    margin-bottom: 50px;
+    background: #fff;
+    margin-top: -130px;
+}
+.header-bg {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.header-bg .bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; 
+}
+.header-bg h1 {
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.header-bg h3 {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+section {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+#content select {
+    width: 100%;
+}
+#content .optionals .wpf_input_label label {
+    font-size: 18px;
+    color: #292929;
+    font-weight: 600;
+    margin: 21px 0;
+}
+#content .optionals label span:not(.wpf_price_option_name) {
+    display: none;
+}
+#content label {
+    display: inherit;
+    font-size: 14px;
+    margin-bottom: 8px !important;
+}
+#booking label span {
+    color: #cc1717;
+    font-size: 14px;
+    font-weight: bold;
+}
+body {
+    counter-reset: section;
+    background: #f9f9f9;
+}
+.step h3 {
+    font-size: 22px;
+    color: #292929;
+    font-weight: 600;
+    position: relative;
+    padding-left: 55px;
+    display: flex;
+    align-items: center;
+}  
+.step h3::before {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(to bottom, #ebdba3 9%, #dc860d 78%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #fff;
+}
+#content .bootstrap-select.dropup {
+    width: 100%;
+} 
+#content .form-group {
+    margin-bottom: 26px;
+}
+#content .dropdown-toggle, 
+#content input[type="text"],
+#content input[type="email"],
+#content input[type="date"],
+#content .dropdown-toggle, 
+#content select {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    color: #6d6d6d;
+    /* font-size: 14px; */
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+    padding: 12px 13px;
+    height: auto;
+    min-height: auto;
+    box-shadow: none;
+    height: auto !important;
+}
+.dropdown-toggle::after{
+    background: url(../images/arrow-down.png)no-repeat;
+    border: none;
+    width: 13px;
+    height: 7px;
+    border: none !important;
+}
+#content .dropdown-menu li a {
+    color: #000;
+    background: none;
+    font-size: 14px;
+    padding: 5px 13px;
+    text-transform: none;
+}
+#content .dropdown-menu {
+    width: 100%;
+    padding: 2px 0;
+}
+#content .dropdown.bootstrap-select {
+    display: initial;
+}
+#content .dropdown-toggle {
+    margin-bottom: 15px;
+}
+#content .dropdown-toggle:after {
+    position: absolute;
+    right: 13px;
+    top: 21px;
+}
+#content .dropdown-toggle:focus,
+#content .dropdown-toggle, #content input,
+#content .dropdown-toggle, #content select {
+    box-shadow: 0px 1px 5px -4px #000;
+}
+.bootstrap-select .dropdown-menu li a {
+    text-transform: capitalize;
+}
+#content h4 {
+    font-size: 18px;
+    color: #292929;
+    font-weight: 700;
+}
+
+#content .form-check {
+    padding: 5px 0 5px;
+    margin-bottom: 10px;
+}
+#content .form-check label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+#content .form-check input {
+    z-index: 1;
+    left: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+#content .form-check label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dbdbdb
+    ;position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+#content .form-check input:checked + label:before {
+    content: "\2713";
+}
+#music-colors {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: 140px;
+}
+
+#content #music-colors button {
+    padding: 8px 10px;
+}
+#payment {
+    padding: 33px 0;
+}
+#payment:before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    height: 100%;
+    background: #ededed;
+    width: calc(100% + 100px);
+}
+#order-detail th {
+    font-size: 12px;
+}
+
+#order-detail td {
+    font-size: 14px;
+}
+#order-detail tfoot td {
+    font-size: 18px;
+    font-weight: 700;
+}
+#music_standopt .dropdown.bootstrap-select {
+    width: 140px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    display: none;
+}
+
+#music_standopt .dropdown.bootstrap-select button {
+    padding: 6px 9px;
+    font-size: 14px;
+}
+
+#music_standopt .dropdown.bootstrap-select button:after {
+    top: 13px;
+}
+#content .wpf_form:not(.wpf_form_id_288){
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} 
+.policy .content {
+    height: 230px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 5px 20px;
+}
+
+.policy {
+    padding: 15px 10px 15px 10px;
+    border: 1px solid #ccc;
+}
+
+#booking p {font-size: 12px;line-height: 22px;}
+#booking input[name="submit"] {
+    background: #9f915c;
+    border: none;
+    color: #fff;
+    width: 100%;
+    margin-top: 21px;
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#booking input[name="submit"]:hover {
+    background: #000;
+}
+#music_standopt .dropdown {
+    display: none;
+}
+
+
+/* #booking .wpf_form_submissions,
+#booking .hide  {
+    display: none;
+} */
+
+/*Footer*/
+#footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+#footer .footer-nav ul li {
+    display: inline-block;
+    padding: 0 13px;
+    position: relative;
+    line-height: 14px;
+}
+#footer .footer-nav ul li a {
+    font-size: 13px;
+    color: #6d6d6d;
+}
+#footer {
+    margin: 70px 0;
+}
+#footer .footer-nav ul li:after {content: "";position: absolute;right: 0;border-right: 1px solid #6d6d6d;height: 100%;}
+
+#footer .footer-nav ul li:last-child:after {
+    opacity: 0;
+}
+#footer .copyright {
+    text-align: center;
+    margin-top: 50px;
+}
+#footer .copyright p {
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 22px;
+}
+
+/* .page-template-customer-pages-php .header-bg {
+    display: none;
+}
+
+.page-template-customer-pages-php #footer {
+    display: none;
+} */
+.page-template-customer-pages-php #header_half {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+}
+#content .error input, 
+#content .error select, 
+#content .error button, 
+#content .error input[type="checkbox"] + label:before {
+    border: 1px solid red !important;
+}
+#thanksyou {
+    text-align: center;
+}
+
+#thanksyou h3 {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#thanksyou .mark {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: none;
+    margin: 20px auto;
+}
+
+#thanksyou .mark:before {
+    content: "\2713";
+    font-size: 80px;
+    font-weight: bold;
+    color: green;
+}
+
+#thanksyou p {
+    color: #000;
+    margin-bottom: 30px;
+}
+#content .hide {
+    display: none;
+}
+
+.loader{
+    background:rgba(0,0,0,0.6) url(../images/spinner-orange.gif) no-repeat center;
+    background-size:80px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display:none; 
+}
+#instrument button {
+    text-transform: capitalize !important;
+} 
+.wpf_form_wrapper .wpf_loading_svg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #000;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wpf_form_wrapper .wpf_loading_svg svg path {fill: #fff;}
+
+.wpf_form_wrapper .wpf_loading_svg svg {
+    width: 100px;
+    height: 100px;
+}
+.wpf_form_wrapper form.wpf_submitting_form .wpf_loading_svg {
+    display: flex !important;
+}
+#termlist p {
+    font-size: 16px;
+    margin-bottom: 5px;
+} 
+#termlist p:not(#checked) {
+    font-weight: normal !important;
+    padding-left: 30px;
+    font-size: 13px !important;
+}
+#termlist p input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+#termlist p input:checked + label:before {
+    content: "\2713";
+}
+
+#termlist p input + label {
+    position: relative;
+    padding-left: 30px;
+}
+
+#termlist p label:before {content: "";width: 20px;height: 20px;border: 1px solid #dbdbdb;position: absolute;left: 0;display: flex;justify-content: center;align-items: center;font-weight: bold;border-radius: 100%;}
+
+#termlist p.error label:before {
+    border: 1px solid red;
+} 
+i.ins {
+    font-size: 12px;
+    margin-top: -5px;
+    display: block;
+    font-style: normal;
+    padding-left: 1px;
+}
+#box-rental, #box-optional {
+    display: none;
+}
+@media (max-width: 576px) {
+    #music_standopt .dropdown.bootstrap-select {
+        position: static;
+        width: 100%;
+        left: 0;
+        margin-top: 10px;
+    }
+}
